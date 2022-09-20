@@ -1,0 +1,126 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="./assets/images/python.png" alt="do pythonimage" style="height: 50px; width: 50px;">
+    </div>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Cadastro</a>
+      <a href="">Sobre</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Curso grátis de Python</h1>
+      <p>Turbine seus conhecimentos em programação!</p>
+    </section>
+    <section class="section-apr">
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-LATVnPcvHI" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div>
+        <h3>Cadastre-se</h3>
+        <form action="">
+          <label>
+            <input type="text" name="name" placeholder="Digite seu nome" id="name" />
+            <label>
+              <input type="text" name="email" placeholder="Digite seu email" id="email" />
+            </label>
+            <label>
+              <input type="tel" name="tel" placeholder="Digite seu telefone" id="tel" />
+            </label>
+            <label>
+              <input type="checkbox" name="agree" id="checked" />
+              Você concorda com os <a href="#">termos</a>?
+            </label>
+            <button type="submit" name="button-cadastro" id="button-cadastro">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <h2>Quais os benefícios que vou ter aprendendo Python?</h2>
+      <p>
+        É possível usar Python para te ajudar com rotinas repetitivas como automatização de tarefas, análise de dados,
+        desenvolvimento web back-end, front-end e muito mais!
+      </p>
+    </section>
+    <section>
+      <h2>Qual a abrangência que a linguagem tem no mercado?</h2>
+      <p>
+        Segundo o site da revista <a
+          href="https://exame.com/carreira/procura-por-carreira-de-programador-cresce-30-no-brasil-e-phyton-e-a-linguagem-mais-buscada/">Exame</a>,
+        as vagas de programador cresceram 30% em 2022 e a linguagem mais procurada é Python. Isso se dá pela ampla gama
+        de oportunidades que ela oferece. Além disso, há altos salários para programadores do do nível júnior por causa
+        da alta procura. O momento é agora!
+      </p>
+    </section>
+    <section>
+      <h2>Confira abaixo alguns depoimentos de pessoas que eu não faço ideia quem são:</h2>
+      <div>
+        <iframe width="200" height="100" src="https://www.youtube.com/embed/0SUx3J91O10" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <iframe width="200" height="100" src="https://www.youtube.com/embed/2_bXT9BrPaQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <iframe width="200" height="100" src="https://www.youtube.com/embed/mfbZ1jG0jDg" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>Criado por: Allysson Moreira.</p>
+    </div>
+    <div>
+      <a href="https://github.com/Moreiraacf?tab=repositories"><img src="./assets/images/github.png" alt="img-git" style="height: 50px; width: auto;"></a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/allysson-moreira-906711236/"><img src="./assets/images/linkedin.png" alt="img-in" style="height: 50px; width: auto;"></a>
+    </div>
+    
+  </footer>
+
+  <script>
+    const name = document.getElementById('name');
+    const email = document.getElementById('email').value;
+    const tel = document.getElementById('tel');
+    const checked = document.getElementById('checked');
+    const button = document.getElementById('button-cadastro');
+
+    function validateEmailAddress(email) {
+      const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
+    
+    function validate() {
+      
+    }
+      $("#validate").bind("click", validate);
+
+    // validation = () => {
+
+    // }
+  </script>
+</body>
+
+</html>
